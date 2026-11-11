@@ -3,7 +3,7 @@ name: vikunja-tasks
 description: >-
   Erstellen von Vikunja-Tasks über den Vikunja-MCP-Server (Tools vikunja__*).
   Immer verwenden, wenn der Nutzer eine Aufgabe in Vikunja anlegen, abändern oder
-  planen will. Konventionen: Titel beginnt mit "[Modul, System|App] TODO", immer
+  planen will. Konventionen: Titel beginnt mit "[Studium Modul oder Projekt]", immer
   Fälligkeit klären, automatisch Benachrichtigung 4 Tage vorher, Beschreibung mit
   Details füllen und das Projekt (Bereich) erfragen bzw. aus dem Kontext ableiten.
 metadata:
@@ -31,10 +31,12 @@ Kontext, wähle es direkt und nenne es kurz. Bist du unsicher, frage einmalig na
 und gib die vorhandenen Projekte als Auswahl an. Wähle nie stillschweigend ein
 Projekt, wenn mehrere plausibel sind.
 
-**2. Titel.** Beginne, wann immer sinnvoll, mit `[Modul, System|App] TODO
-<Kurzfassung>` – Modul/System = betroffener Bereich, `TODO` wörtlich, danach eine
-handlungsorientierte Kurzbeschreibung (Verb + Objekt). Ist das Muster unpassend,
-beginne trotzdem mit einem aussagekräftigen Titel und erkläre kurz warum.
+**2. Titel.** Beginne, wann immer sinnvoll, mit `[Studium Modul oder Projekt]
+<kurze Aufgabenbeschreibung>` – in der Klammer steht das betroffene Modul bzw.
+Projekt (z.B. `[Mathe]`, `[Home Server]`, `[Netzwerk]`), danach folgt eine kurze,
+handlungsorientierte Aufgabenbeschreibung (Verb + Objekt). Ist das Muster
+unpassend, beginne trotzdem mit einem aussagekräftigen Titel und erkläre kurz
+warum.
 
 **3. Fälligkeit.** Setze immer ein `due_date` (ISO-8601 Datetime). Ist das Datum
 aus dem Kontext ableitbar, übernimm es; sonst frage einmalig nach. Fehlt eine
@@ -67,7 +69,7 @@ Titel, Projekt, Fälligkeit und die Erinnerung („Erinnerung 4 Tage vorher").
 
 ## Kurzprüfung vor dem Anlegen
 
-- Titel beginnt (wenn sinnvoll) mit `[Modul, System|App] TODO`?
+- Titel beginnt (wenn sinnvoll) mit `[Studium Modul oder Projekt]`?
 - Fälligkeit gesetzt?
 - Reminder 4 Tage vor Fälligkeit konfiguriert?
 - Beschreibung mit Kontext/Schritten gefüllt?
